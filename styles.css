@@ -1,11 +1,11 @@
 :root {
   color-scheme: light;
-  --bg: #f5f0e6;
-  --text: #14213d;
-  --muted: #5c6473;
-  --accent: #b1762f;
-  --accent-dark: #7b4d15;
-  --panel: rgba(255, 255, 255, 0.95);
+  --bg: #e6f2ea;
+  --text: #123d34;
+  --muted: #2e5e52;
+  --accent: #69bf4b;
+  --accent-dark: #1f8a71;
+  --panel: rgba(255, 255, 255, 0.92);
 }
 
 * {
@@ -35,7 +35,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(rgba(8, 20, 35, 0.6), rgba(8, 20, 35, 0.65)),
+  background-image: linear-gradient(rgba(11, 56, 46, 0.6), rgba(14, 66, 55, 0.65)),
     url("hero-background.jpg");
   background-position: center;
   background-size: cover;
@@ -84,7 +84,7 @@ footer {
   margin: 0.6rem 0 1rem;
   font-size: clamp(1.4rem, 2.4vw, 1.8rem);
   font-weight: 600;
-  color: #f7e6c5;
+  color: #d7f2cf;
 }
 
 .hero p {
@@ -111,7 +111,7 @@ footer {
 }
 
 .expectations {
-  background: var(--bg);
+  background: #e6f2ea;
 }
 
 .cards {
@@ -126,7 +126,8 @@ footer {
   background: var(--panel);
   border-radius: 18px;
   padding: 2rem;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(31, 138, 113, 0.18);
+  box-shadow: 0 12px 32px rgba(9, 66, 47, 0.08);
 }
 
 .card h3 {
@@ -137,7 +138,7 @@ footer {
 }
 
 .about {
-  background: #f7efe0;
+  background: #d9edde;
 }
 
 .about p {
@@ -148,17 +149,17 @@ footer {
 }
 
 .contact {
-  background: #efe4cf;
+  background: #cfe6d6;
 }
 
 .contact-card {
   max-width: 760px;
   margin: 0 auto;
-  background: white;
+  background: #f7fcf8;
   border-radius: 20px;
-  border: 1px solid rgba(20, 33, 61, 0.08);
+  border: 1px solid rgba(31, 138, 113, 0.2);
   padding: 2.25rem;
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 14px 32px rgba(9, 66, 47, 0.1);
 }
 
 .contact-card > p {
@@ -186,15 +187,15 @@ button {
 
 input,
 textarea {
-  border: 1px solid #d7cdb8;
+  border: 1px solid #9ecab6;
   border-radius: 10px;
   padding: 0.9rem 1rem;
-  background: #fcfaf7;
+  background: #f2faf5;
 }
 
 input:focus,
 textarea:focus {
-  outline: 2px solid rgba(177, 118, 47, 0.25);
+  outline: 2px solid rgba(31, 138, 113, 0.25);
   border-color: var(--accent);
 }
 
@@ -210,7 +211,7 @@ button {
 }
 
 button:hover {
-  background: var(--accent-dark);
+  background: #167a63;
 }
 
 .form-feedback {
