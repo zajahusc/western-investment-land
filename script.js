@@ -3,10 +3,10 @@ const feedback = document.querySelector('.form-feedback');
 
 if (form) {
   form.addEventListener('submit', (event) => {
-    const robotAnswer = form.elements.robot_check?.value?.trim();
-    if (robotAnswer !== '7') {
+    const robotCheck = form.elements.robot_check;
+    if (!robotCheck?.checked) {
       event.preventDefault();
-      feedback.textContent = 'Please complete the anti-robot check before submitting.';
+      feedback.textContent = 'Please confirm the anti-robot check before submitting.';
       return;
     }
 

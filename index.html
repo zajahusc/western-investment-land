@@ -113,15 +113,9 @@
               <span>Message</span>
               <textarea name="message" rows="6" required></textarea>
             </label>
-            <label>
-              <span>Anti-robot check: What is 3 + 4?</span>
-              <input
-                type="text"
-                name="robot_check"
-                inputmode="numeric"
-                pattern="7"
-                required
-              />
+            <label class="robot-check">
+              <input type="checkbox" name="robot_check" required />
+              <span>I'm not a robot</span>
             </label>
             <button type="submit">Submit</button>
             <p class="form-feedback" aria-live="polite"></p>

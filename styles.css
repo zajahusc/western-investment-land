@@ -230,6 +230,25 @@ button:hover {
   pointer-events: none;
 }
 
+.robot-check {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: fit-content;
+  font-weight: 600;
+  background: #fff;
+  border: 1px solid #b8c8c0;
+  border-radius: 6px;
+  padding: 0.7rem 0.9rem;
+}
+
+.robot-check input[type='checkbox'] {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0;
+  accent-color: #2d7a67;
+}
+
 footer {
   text-align: center;
   padding: 1.5rem 5vw 2.5rem;
