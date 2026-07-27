@@ -30,11 +30,11 @@ img {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 72vh;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   background-image: linear-gradient(rgba(8, 20, 35, 0.6), rgba(8, 20, 35, 0.65)),
     url("hero-background.jpg");
   background-position: center;
@@ -49,7 +49,6 @@ img {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.22), transparent 30%, rgba(0, 0, 0, 0.2));
 }
 
-.top-nav,
 .hero-content,
 .section,
 footer {
@@ -57,51 +56,14 @@ footer {
   z-index: 1;
 }
 
-.top-nav {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 24px 5vw;
-}
-
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.brand img {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-}
-
-.nav-cta {
-  color: white;
-  text-decoration: none;
-  padding: 10px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 999px;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.nav-cta:hover {
-  background: white;
-  color: var(--text);
-}
-
 .hero-content {
   max-width: 760px;
   margin: 0 auto;
-  padding: 4rem 2rem 6rem;
+  padding: 2.5rem 2rem 3rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-logo {
@@ -111,8 +73,11 @@ footer {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-size: clamp(1.8rem, 5vw, 3.2rem);
   letter-spacing: 0.08em;
+  white-space: nowrap;
+  width: fit-content;
+  text-align: center;
 }
 
 .hero h2 {
@@ -263,12 +228,13 @@ footer {
 }
 
 @media (max-width: 640px) {
-  .top-nav {
-    justify-content: center;
+  .hero {
+    min-height: 64vh;
   }
 
-  .brand {
-    font-size: 0.95rem;
+  .hero h1 {
+    font-size: clamp(1.35rem, 7.2vw, 2rem);
+    letter-spacing: 0.05em;
   }
 
   .hero-content {
