@@ -161,6 +161,11 @@ footer {
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.06);
 }
 
+.contact-card > p {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+}
+
 form {
   display: grid;
   gap: 1rem;
@@ -213,6 +218,15 @@ button:hover {
   margin: 0;
   color: var(--accent-dark);
   font-weight: 700;
+}
+
+.bot-field {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 footer {
