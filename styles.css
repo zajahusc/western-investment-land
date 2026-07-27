@@ -36,9 +36,10 @@ img {
   flex-direction: column;
   justify-content: space-between;
   background-image: linear-gradient(rgba(8, 20, 35, 0.6), rgba(8, 20, 35, 0.65)),
-    url("https://static.wixstatic.com/media/74f988_122963614ee04d6aaceb05413345e37a~mv2_d_4032_3024_s_4_2.jpeg/v1/fill/w_117,h_88,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/74f988_122963614ee04d6aaceb05413345e37a~mv2_d_4032_3024_s_4_2.jpeg");
+    url("hero-background.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   color: white;
 }
 
@@ -58,13 +59,13 @@ footer {
 
 .top-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 24px 5vw;
 }
 
 .brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
   color: white;
@@ -73,6 +74,7 @@ footer {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .brand img {
@@ -262,8 +264,11 @@ footer {
 
 @media (max-width: 640px) {
   .top-nav {
-    flex-direction: column;
-    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .brand {
+    font-size: 0.95rem;
   }
 
   .hero-content {
