@@ -35,8 +35,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(rgba(11, 56, 46, 0.6), rgba(14, 66, 55, 0.65)),
-    url("hero-background.jpg");
+  background-image: url("hero-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,9 +43,7 @@ img {
 }
 
 .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.22), transparent 30%, rgba(0, 0, 0, 0.2));
+  display: none;
 }
 
 .hero-content,
